@@ -75,6 +75,6 @@ async function estimateGas() {
     console.log(`Total Max Cost: ${ethers.formatUnits(gasCost, "ether")} ETH`);
 }
 
-sendTestETH().catch(console.error);
+//sendTestETH().catch(console.error); dont run this, it uses private key
 estimateGas().catch(console.error);
 getTxns().catch(console.error);  
